@@ -1,0 +1,261 @@
+
+/* banner section */
+
+.bannerLeft {
+    width: 100% !important;
+}
+.bannerLeft p{
+    width: 76%;
+}
+.bannerLeft .simpleSpan{
+    width: 65px;
+}
+.bannerimage::before {
+    width: 0px;
+}
+.page3Image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+
+
+/* banner bottom Section */
+
+.bannerBottomSection{
+    padding: var(--sec-padding);
+    background-color: var(--color-1-ffffff);
+}
+.bannerBottomSec .images{
+    display: flex;
+    justify-content: space-between;
+}
+.bannerBottomSec .images img{
+    width: 116px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* zeggen section */
+.zeggenSection{
+    padding: var(--sec-padding);
+    background-color: var(--color-1-ffffff);
+}
+.zeggenLeft{
+    width: 80%;
+}
+.zeggenLeft h2{
+    color: var(--color-3-20394E);
+    font-size: 42px;
+}
+.zeggenLeft span{
+    width: 85px;
+    height: 4px;
+    background-color: var(--color-5-FF9933);
+    border-radius: 20px;
+}
+.zeggenLeft p{
+    color: var(--color-3-20394E);
+    line-height: 30px;
+    margin-top: 20px;
+}
+.zeggenRight .extraPadding{
+    padding: 30px;
+    box-sizing: border-box;
+}
+.zeggenRight .newItem{
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 30px #3572A512;
+    border-radius: 24px;
+}
+.zeggenRight .newItem p{
+    color: var(--color-3-20394E);
+    line-height: 30px;
+    position: relative;
+}
+.zeggenRight .newItem p::before {
+    content: '\f10d';
+    font: var(--fa-font-solid);
+    color: var(--color-5-FF9933);
+    font-size: 60px;
+    position: absolute;
+    top: -67px;
+    left: 0;
+}
+.zeggenRight .newItem img{
+    width: 235px;
+    height: auto;
+    object-fit: contain;
+}
+.owl-carousel button.owl-dot {
+    width: 0px;
+    height: 0px;
+    display: none;
+    border: none;
+    background: var(--color-6-EAF1F6);
+    margin: 0 0px;
+    transition: .3s;
+}
+.owl-dots {
+    text-align: center;
+    padding-top: 0px;
+}
+.owl-dots button.owl-dot.active {
+    background-color: var(--color-5-FF9933);
+    width: 0px;
+}
+.owl-nav {
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+.navLeft {
+    height: 50px;
+    width: 50px;
+    font-size: 60px;
+    color: var( --color-5-FF9933);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 7%;
+    transition: .3s;
+}
+.navLeft:hover{
+    color: #FF9933;
+    background-color: #fff;
+}
+.navRight:hover{
+    color: #FF9933;
+    background-color: #fff;
+}
+.navRight{
+    height: 50px;
+    width: 50px;
+    font-size: 60px;
+    color: var( --color-5-FF9933);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 75%;
+    transition: .3s;
+}
+
+/* detail section */
+.detailRight{
+    width: 90%;
+    margin: auto;
+}
+.detailRight h5{
+    margin-top: 20px;
+}
+.detailRight h2{
+   margin-bottom: 10px;
+}
+.detailRight .simpleSpan{
+    background-color: var(--color-5-FF9933);
+    width: 85px;
+    height: 4px;
+    border-radius: 20px;
+}
+.detailRight p{
+   margin: 20px 0;
+   line-height: 30px;
+}
+.detailRight .detailbtn{
+    margin-top: 40px;
+}
+
+/* beeld section */
+.beeldSection{
+    background-color: var(--color-1-ffffff);
+}
+
+/* fqa ection */
+
+.fqaSection{
+    background-color: var(--color-6-EAF1F6);
+}
+.fqaLeft .simpleSpan{
+    width: 50px;
+}
+.fqaSection .button a .btnTwo {
+    background-color: var(--color-6-EAF1F6);
+}
+.accordionItemHeader {
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-1-ffffff);
+}
+.accordionItemHeader.active::after{
+    color: var(--color-5-FF9933);
+}
+.accordionItemHeader.active {
+    border-bottom: 2px solid transparent;
+    color: var( --color-4-121C26);
+}
+.accordionItemHeader.active ~ .accordionItemBody {
+    border-bottom: 2px solid var(--color-1-ffffff);
+}
+/* voor section */
+
+.voorSec .button a .btnTwo {
+    background-color: var(--color-1-ffffff);
+}
+.voorSec .detailImage{
+    display: flex;
+    justify-content: end;
+}
+
+
+
+/* responsive css */
+
+@media (max-width:1024px){
+    .laptopfqaSec {
+        margin-bottom: 50px;
+    }
+    .fqabtn {
+        margin-top: 15px;
+    }
+    .accordionItemBodyContent {
+        padding-left: 12px;
+    }
+}
+@media (max-width:430px){
+    .bannerLeft p {
+        width: 100%;
+    }
+    .bannerLeft .bannerbtn {
+        margin-top: 0px;
+    }
+    .bannerBottomSec .images {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .zeggenLeft h2 {
+        font-size: 28px;
+    }
+    .zeggenLeft {
+        width: 100%;
+    }
+    .navRight {
+        right: 67%;
+    }
+    .zeggenRight .newItem {
+        padding: 25px;
+    }
+    .fqaLeft h2 {
+        font-size: 28px;
+    }
+}

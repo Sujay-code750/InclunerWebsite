@@ -1,0 +1,98 @@
+
+/* onze section */
+
+.onzeSection{
+    background-color: var(--color-1-ffffff);
+}
+
+.onseSecRight .search{
+    position: relative;
+    padding: 12px 30px;
+    /* outline: none; */
+    width: 100%;
+    border-radius: 60px;
+    border: 1px solid #c9ced3;
+}
+.onseSecRight .search::placeholder{
+    color: #20394e;
+}
+.onseSecRight .search::after{
+    content: "\e521";
+    font: var(--fa-font-solid);
+    /* content: url("https://staging7.incluneer.com/wp-content/uploads/2023/12/search-svgrepo-com-2.svg");
+    display: block; */
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 16px;
+  font-size: 20px;
+  right: 0px;
+  color: #000;
+  background-color: #000;
+
+}
+.onseSecRight h3{
+    font-size: 24px;
+    content: var(--color-2-#000000);
+    font-weight: 700;
+    margin: 25px;
+    position: relative;
+}
+.onseSecRight h3::before {
+    content: "";
+    font-size: 24px;
+    height: 3px;
+    width: 15px;
+    background-color: var(--color-5-FF9933);
+    position: absolute;
+    top: 12px;
+    left: -24px;
+    border-radius: 20px;
+}
+.onseSecRight .spanLink{
+    display: flex;
+    justify-content: space-between;
+    color: #51565D;
+    font-size: 18px;
+    padding: 10px 0;
+    transition: .2s;
+}
+.onseSecRight .spanLink:hover{
+    color: var(--color-5-FF9933);
+}
+.newBtn a{
+    color: #8C8F92;
+    border: 1px solid #c9ced3;
+    background-color: var(--color-1-ffffff);
+    padding: 5px 15px;
+    border-radius: 60px;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: .2s;
+}
+.newBtn a:hover{
+    color: var(--color-1-ffffff);
+    background-color: #558BB8;
+    border: 1px solid #558BB8;
+}
+
+
+/* responsive css */
+
+@media(max-width:1024px){
+    .order-lg-0{
+        order: 0;
+    }
+    .order-lg-1{
+        order: 1;
+    }
+    .order-lg-2{
+        order: 2;
+    }
+    .order-lg-3{
+        order: 3;
+    }
+    .order-lg-4{
+        order: 4;
+    }
+}

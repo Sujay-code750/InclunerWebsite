@@ -1,0 +1,114 @@
+/* projecten Section */
+
+.projectenSection{
+    padding: var(--sec-padding);
+    background-color: var( --color-1-ffffff);
+    padding-bottom: 0;
+}
+.projectenTop h2{
+    color: var(--color-4-121C26);
+    font-size: 42px;
+}
+.projectenTop span{
+    width: 85px;
+    height: 4px;
+    background-color: var(--color-5-FF9933);
+    border-radius: 20px;
+}
+.projectenSec .extraPadding{
+    padding: 50px 0;
+}    
+.projectenSec .mainItem{
+    box-shadow: 0px 0px 30px #558BB81A;
+    border-radius: 50px;
+}
+.projectenText{
+    padding: 65px;
+    box-sizing: border-box;
+}
+.projectenText h2{
+    color: var(--color-3-20394E);
+    font-size: 32px;
+}
+.projectenText .simpleSpan{
+    width: 85px;
+    height: 4px;
+    background-color: var(--color-5-FF9933);
+    border-radius: 20px;
+}
+.projectenText p{
+    color: var(--color-4-121C26);
+    line-height: 32px;
+    margin: 20px 0;
+}
+.projectenText a{
+    color: var(--color-4-121C26);
+    font-size: 18px;
+    transition: .3s;
+}
+.projectenText a:hover{
+    color: var(--color-5-FF9933);
+
+}
+.projectenSec .mainItem .image img{
+    width: auto;
+    height: 465px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50px 0;
+}
+.projectenSec .mainItem .image2 img{
+    border-radius: 0 50px;
+}
+
+/* zeggen Section */
+
+.zeggenLeft h2{
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* responsive css */
+
+
+@media(max-width:1024px){
+    .bannerLeft p {
+	width: 100%;
+    } 
+}
+
+@media(max-width:430px){
+    .button .btnTwo {
+        margin-left: 0 !important;
+    }
+    .projectenTop h2 {
+        font-size: 28px;
+    }
+    .projectenText h2 {
+        font-size: 28px;
+    }
+    .projectenText {
+        padding: 20px;
+    }
+    .projectenSec .mainItem {
+        border-radius: 15px;
+    }
+    .projectenSec .mainItem .image img {
+        border-radius: 0;
+    }
+    .zeggenLeft h2 {
+        font-size: 28px;
+        margin: 0;
+    }
+}
+@media(max-width:360px){
+    .zeggenLeft {
+        margin-bottom: 50px;
+    }
+}

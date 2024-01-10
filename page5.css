@@ -1,0 +1,205 @@
+/* banner section */
+
+.bannerimage{
+    position: relative;
+}
+.bannerimage .logo {
+    position: absolute;
+    bottom: -20px;
+    left: -50px;
+    background-color: var(--color-6-EAF1F6);
+    padding: 30px 100px 30px 60px;
+    box-sizing: border-box;
+    border-radius: 0 50px;
+    width: 100%;
+}
+.bannerimage .logo img{
+    max-width: 100%;
+}
+
+/* onze Section */
+.onzeSection{
+    padding: var(--sec-padding);
+    background-color: var(--color-1-ffffff);
+}
+.onzeSec .item{
+    padding: 50px 0;
+}
+.onzeLeft h2{
+    color: var(--color-3-20394E);
+    font-size: 42px;
+    padding-top: 20px;
+}
+.onzeMiddle p{
+    line-height: 30px;
+    color: var(--color-3-20394E);
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+}
+.onzeMiddle .peraOne{
+    padding-left: 50px;
+}
+.onzeMiddle .peraTwo{
+    padding-right: 50px;
+}
+.onzeMiddle .peraOne::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--color-5-FF9933);
+}
+.onzeMiddle .peraTwo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--color-5-FF9933);
+}
+
+/* van section */
+
+.vanSection{
+    padding: var(--sec-padding);
+    background-color: var(--color-1-ffffff);
+}
+.vanTop{
+    margin: auto;
+    width: 38%;
+}
+.vanTop h2{
+    color: var(--color-3-20394E);
+    font-size: 42px;
+}
+.vanTop span{
+    width: 85px;
+    height: 4px;
+    background-color: var(--color-5-FF9933);
+    border-radius: 20px;
+}
+.vanTop p{
+    color: var(--color-3-20394E);
+    margin: 20px 0 0 0;
+    line-height: 30px;
+}
+.vanSec .grids{
+    padding-top: 50px;
+}
+.vanSec .grid{
+    box-shadow: 0px 0px 30px #0000001A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.vanSec .grid.firstGrid{
+    padding-bottom: 53px;
+}
+.vanSec .grid h3{
+    color: #213430;
+    font-size: 22px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.vanSec .grid p{
+    color: #384341;
+    margin: 0;
+}
+
+
+
+/* responsive css */
+
+@media(max-width:1024px){
+    .vanSec .grid {
+        padding-bottom: 0;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .vanSec .grid.firstGrid {
+        padding-bottom: 15px;
+    }
+}
+@media(max-width:810px){
+    .vanTop h2 {
+        font-size: 28px;
+    }
+}
+@media(max-width:430px){
+    .onzeLeft h2 {
+	    font-size: 28px;
+	    padding-top: 0px;
+    }
+    .onzeLeft span{
+        transform: scale(.7);
+        margin-left: -20px;
+    }
+    .onzeMiddle .peraOne::before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+        display: none;
+	    width: 4px;
+	    height: 100%;
+	    background-color: var(--color-5-FF9933);
+    }
+    .onzeMiddle .peraOne {
+	    padding-left: 0px;
+    }
+    .onzeMiddle .peraTwo {
+	    padding-right: 0px;
+    }
+    .onzeMiddle .peraTwo::after {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 4px;
+        display: none;
+	    height: 100%;
+	    background-color: var(--color-5-FF9933);
+    }
+    .onzeSec .onzeLeft{
+        text-align: left;
+    }
+    .onzeSec .onzeMiddle{
+        text-align: left;
+    }
+    .onzeSec .item {
+	    padding: 10px 0;
+    }
+    .vanTop {
+	    margin: auto;
+	    width: 100%;
+    }
+    .vanSec .grid {
+	    padding: 25px;
+    }
+    .meteenSec {
+	    border-radius: 60px 0;
+	    padding: 51px 20px;
+    }
+    .meteenSection .container {
+	    width: 430px;
+    }
+}
+@media(max-width:360px){
+    .meteenSection .container {
+        width: 360px;
+    }
+    .bannerimage .logo {
+        position: absolute;
+        bottom: -20px;
+        left: -50px;
+        background-color: var(--color-6-EAF1F6);
+        display: none;
+        box-sizing: border-box;
+        border-radius: 0 50px;
+        width: 7%;
+    }
+}
